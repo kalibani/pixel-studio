@@ -1,6 +1,6 @@
 # listcardsoffilm
 
-> A Vue.js project
+> A Vue.js project | Access it on : http://studio-ghibli.kautzaralibani.com
 
 ## Build Setup
 
