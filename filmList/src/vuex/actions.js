@@ -13,3 +13,13 @@ export const getAllFilms = ({ commit }, payload) => {
   })
 
 }
+
+export const getFilmById = ({ commit }, id) => {
+  http.get('/films/'+ id)
+  .then(({data}) => {
+    commit('saveFilmById', data)
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+}

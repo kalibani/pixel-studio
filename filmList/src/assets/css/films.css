@@ -3,13 +3,6 @@ html {
   font-size: 14px;
 }
 
-h5 {
-  font-size: 1.28571429em;
-  font-weight: 700;
-  line-height: 1.2857em;
-  margin: 0;
-}
-
 .card {
   font-size: 1em;
   overflow: hidden;
@@ -95,10 +88,6 @@ h5 {
   vertical-align: top;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .meta {
   font-size: 1em;
   color: rgba(0, 0, 0, .4);
@@ -111,4 +100,8 @@ h5 {
 
 .meta a:hover {
   color: rgba(0, 0, 0, .87);
+}
+
+.card-title a:hover {
+  color: #157ab5;
 }

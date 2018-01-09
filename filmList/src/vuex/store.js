@@ -6,7 +6,8 @@ import * as mutations from './mutations'
 Vue.use(Vuex)
 
 const state = {
-  films: []
+  films: [],
+  film: []
 }
 
 const store = new Vuex.Store({
