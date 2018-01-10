@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="wrap">
           <h1 class="form-title">
-          Studio Ghilbi Welcome
+          Studio Ghibli Welcome
           <img class="img" src="https://s-media-cache-ak0.pinimg.com/originals/49/88/52/4988527c382a3715ad219591ff30c7bd.jpg" alt="" />
           </h1>
         </div>
@@ -14,11 +14,8 @@
 </template>
 
 <script>
-import Navbar from './Navbar.vue'
 export default {
-  components:{
-    appNavbar: Navbar
-  }
+  
 }
 </script>
 

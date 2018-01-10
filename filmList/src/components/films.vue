@@ -37,13 +37,8 @@
 </template>
 
 <script>
-import Navbar from './Navbar.vue'
 import { mapActions, mapState } from 'vuex'
 export default {
-  components:{
-    appNavbar: Navbar
-  },
-
   computed:{
     ...mapState([
       'films'
