@@ -4,7 +4,10 @@
       <router-link class="navbar-brand" :to="{ name: 'Home', params: {} }">
         STUDIO GHIBLI
       </router-link>
-      <div class="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <router-link :to="{ name: 'films' }" class="nav-link">Films</router-link>

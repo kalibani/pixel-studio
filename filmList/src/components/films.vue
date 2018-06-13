@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <div class="container">
+    <loader v-if="loading"></loader>
+    <div class="container" v-if="!loading">
       <div class="row">
         <div class="col-sm-4 mt-4" v-for="film in films">
           <div class="card card-inverse card-info">
@@ -37,13 +38,17 @@
 </template>
 
 <script>
+import loader from '@/components/loader'
 import { mapActions, mapState } from 'vuex'
 export default {
   computed:{
     ...mapState([
-      'films'
+      'films',
+      'loading'
     ])
   },
+
+  components: { loader },
 
   created(){
     this.getAllFilms()

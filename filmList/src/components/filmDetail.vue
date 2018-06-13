@@ -1,5 +1,7 @@
 <template>
-  <div class="container">
+  <div class="">
+  <loader v-if="loading"></loader>
+  <div class="container" v-if="!loading">
     <div class="row">
       <div class="col-md-10 mt-4">
         <div class="card mb-4">
@@ -24,14 +26,17 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
+import loader from '@/components/loader'
 import { mapActions, mapState } from 'vuex'
 export default {
   computed:{
     ...mapState([
-      'film'
+      'film',
+      'loading'
     ])
   },
 
@@ -40,6 +45,8 @@ export default {
      this.getFilmById(this.$route.params.id)
     }
   },
+
+  components: { loader },
 
   created(){
     this.getFilmById(this.$route.params.id)

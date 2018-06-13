@@ -7,7 +7,8 @@ Vue.use(Vuex)
 
 const state = {
   films: [],
-  film: []
+  film: [],
+  loading: true
 }
 
 const store = new Vuex.Store({

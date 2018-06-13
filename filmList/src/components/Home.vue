@@ -5,8 +5,8 @@
         <div class="wrap">
           <h1 class="form-title">
           Studio Ghibli Welcome
-          <img class="img" src="https://s-media-cache-ak0.pinimg.com/originals/49/88/52/4988527c382a3715ad219591ff30c7bd.jpg" alt="" />
           </h1>
+          <img class="img" style="margin:auto; width:90%;"src="https://s-media-cache-ak0.pinimg.com/originals/49/88/52/4988527c382a3715ad219591ff30c7bd.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -27,9 +27,9 @@ export default {
 
   h1 {
     text-align: center;
-  },
-
-  .img {
-    margin: auto;
   }
+
+  /*.img {
+    margin: auto;
+  }*/
 </style>
